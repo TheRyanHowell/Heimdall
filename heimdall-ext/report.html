@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Heimdall - Report</title>
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" type="image/png" href="/icons/U_32.png" id="favicon"/>
+  <script src="./bootstrap/js/bootstrap.min.js" rel="stylesheet" type="text/css"></script>
+<body id="reportBody" style="max-width: 1200px;margin: 20px auto;">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
+          <h1>Heimdall Report</h1>
+          <h2 id="title"></h2>
+          <div id="header">
+            <h3 class="text-center">Overall Rating</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <div id="overallRating"><span id="rating"></span></div>
+              </div>
+              <div class="col-sm-6" id="details">
+                <p class="text-center text-sm-left">Scan Type: <span id="scanType"></span></p>
+                <p class="text-center text-sm-left">Scan Mode: Full</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="content"><p>Full Report</p></div>
+        </div>
+    </div>
+
+    <div id="key">
+      <h4>Key:</h4>
+      <img class="key" title="A+" src="./icons/A+_128.png" width="128" height="128">
+      <img class="key" title="A" src="./icons/A_128.png" width="128" height="128">
+      <img class="key" title="B" src="./icons/B_128.png" width="128" height="128">
+      <img class="key" title="C" src="./icons/C_128.png" width="128" height="128">
+      <img class="key" title="D" src="./icons/D_128.png" width="128" height="128">
+      <img class="key" title="F" src="./icons/F_128.png" width="128" height="128">
+      <img class="key" title="U" src="./icons/U_128.png" width="128" height="128">
+      <p>Module scores (A+ to F) account for severity of assessed threat, where A+ is the best score possible.</p>
+    </div>
+  </div>
+  <script src="libs/browser-polyfill/browser-polyfill.min.js"></script>
+  <script src="./dist/report.compiled.js"></script>
+</body>
+</html>

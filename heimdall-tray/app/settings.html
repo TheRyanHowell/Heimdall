@@ -1,0 +1,38 @@
+<!doctype html>
+<html style="height: 100%;">
+<head>
+  <meta charset="utf-8">
+  <title>Heimdall Tray Settings</title>
+  <link rel="stylesheet" href="./resources/bootstrap/css/bootstrap.min.css">
+</head>
+<body style="height: 100%;">
+
+  <div id="app" class="container-fluid" style="height: 100%; max-width: 1200px;min-width: 300px;">
+    <div class="row h-100">
+      <div class="col-sm-12 my-auto text-center">
+        <form>
+          <h2 class="form-signin-heading">Heimdall Tray Settings</h2>
+          <div class="row">
+            <div class="col form-group">
+              <label for="address">Service Address</label>
+              <input id="address" type="text" value="127.0.0.1" class="form-control" required autofocus>
+            </div>
+            <div class="col form-group">
+              <label for="port">Service Port</label>
+              <input id="port" type="number" class="form-control" value=3000 min=1024 max=65535 required>
+            </div>
+            <div class="col form-group">
+              <label for="threads">Processing Threads</label>
+              <input id="threads" type="number" class="form-control" value=1 min=1 max=1 required>
+            </div>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+        </form>
+        <p>Settings will apply when application has been restarted.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

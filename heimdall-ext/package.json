@@ -1,0 +1,24 @@
+{
+  "name": "heimdall-ext",
+  "version": "0.0.16",
+  "description": "",
+  "scripts": {
+    "build": "browserify --exclude 'dns-packet' --exclude 'heartbleed-check-packet' --exclude 'ocsp' --exclude 'portscanner' background.js -g uglifyify -o dist/background.compiled.js && browserify -g uglifyify report.js -o dist/report.compiled.js && browserify -g uglifyify popup.js -o dist/popup.compiled.js && browserify -g uglifyify options.js -o dist/options.compiled.js",
+    "sign": "web-ext sign --ignore-files README.md dist.sh dist.js chromedist background.js popup.js report.js .api-key .issuer package.json package-lock.json heimdall-ext.pem --api-key `cat .issuer` --api-secret `cat .api-key`",
+    "test": "nyc -x test -x libs -x dist --reporter=text --reporter=lcov --check-coverage --lines 80 --per-file mocha --recursive --no-warnings"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "heimdall-library": "file:../heimdall-library",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.1.0",
+    "uglifyify": "^4.0.5",
+    "web-ext": "^2.4.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4",
+    "nyc": "^11.4.1"
+  }
+}

@@ -1,0 +1,175 @@
+html, body {
+  background: #FFF;
+  color: #000;
+  width: 100%;
+}
+
+body {
+  white-space: nowrap;
+}
+
+#reportBody {
+  max-width: 1200px;
+}
+
+#popupBody {
+  padding: 10px 10px;
+}
+
+#reportURL {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 9999;
+  display: none;
+}
+
+#key {
+  margin: 40px 0;
+}
+
+img.key {
+  width: auto;
+  height: 1.5em;
+  border-radius: 10%;
+}
+
+img.smallkey {
+  width: auto;
+  height: 1.5em;
+  border-radius: 10%;
+}
+
+#header {
+    display: none;
+    background-color: rgba(0,0,0,.05);
+    border-radius: 25px;
+    margin: 22px auto 15px;
+    padding: 10px;
+}
+
+#header h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#headerSmall {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 18px;
+    margin: 22px auto 15px;
+    padding: 10px;
+}
+
+#headerSmall h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#headerSmall > div {
+  width: 150px;
+}
+
+
+#overallRating {
+  color: #FFF;
+  width: 128px;
+  font-size: 96px;
+  text-align: center;
+  line-height: 128px;
+  margin: 0 auto 10px auto;
+  border: 3px solid rgb(230,230,230);
+  border-radius: 10%;
+}
+
+#overallRatingSmall {
+  color: #FFF;
+  width: 96px;
+  font-size: 68px;
+  text-align: center;
+  line-height: 96px;
+  margin: 0 auto 8px auto;
+  border: 2px solid rgb(230,230,230);
+  border-radius: 8%;
+}
+
+.bgGradeU {
+  background-color: rgb(158,158,158);
+}
+
+.bgGradeF {
+  background-color: rgb(244,67,54);
+}
+
+
+.bgGradeD {
+  background-color: rgb(255,152,0);
+}
+
+.bgGradeC {
+  background-color: rgb(253,216,53);
+}
+
+.bgGradeB {
+  background-color: rgb(205,220,57);
+}
+
+.bgGradeA {
+  background-color: rgb(76,175,80);
+}
+
+.bgGradeAA {
+  background-color: rgb(33,150,243);
+}
+
+.bgGradeUHalf {
+  background-color: rgba(158,158,158,1);
+}
+
+.bgGradeFHalf {
+  background-color: rgba(244,67,54,1);
+}
+
+
+.bgGradeDHalf {
+  background-color: rgba(255,152,0,1);
+}
+
+.bgGradeCHalf {
+  background-color: rgba(253,216,53,1);
+}
+
+.bgGradeBHalf {
+  background-color: rgba(205,220,57,1);
+}
+
+.bgGradeAHalf {
+  background-color: rgba(76,175,80,1);
+}
+
+.bgGradeAAHalf {
+  background-color: rgba(33,150,243,1);
+}
+
+#report-table thead th {
+  border-bottom: none;
+}
+
+#report-table td {
+  padding: .3em .6em;
+}
+
+#report-table .border-left {
+  border-left: rgba(0,0,0,.05);
+}
+
+.col1 {
+  width: 1%;
+}
+
+.col2 {
+  width: 2%;
+}
+
+.col3 {
+  width: 97%;
+}

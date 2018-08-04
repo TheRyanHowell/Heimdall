@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="container">
+      <form>
+          <div class="browser-style">
+            <label for="type">Scan Type:</label>
+            <select id="type" class="browser-style">
+              <option value=0>Passive</option>
+              <option value=1>Active</option>
+            </select>
+          </div>
+          <div class="browser-style">
+            <label for="serviceAddress">Service Address:</label>
+            <input id="serviceAddress" type="text" value="127.0.0.1" class="browser-style" />
+          </div>
+
+          <div class="browser-style">
+            <label for="servicePort">Service Port:</label>
+            <input id="servicePort" type="text" value="3000" class="browser-style" />
+          </div>
+
+          <div class="browser-style">
+            <label for="whitelist">Whitelist (Regex):</label>
+            <div id="whitelist" class="browser-style">
+              <button id="addWhitelist" class="browser-style listButton" type="button">Add</button>
+            </div>
+          </div>
+
+          <div class="browser-style">
+            <label for="blacklist">Blacklist (Regex):</label>
+            <div id="blacklist" class="browser-style">
+              <button id="addBlacklist" class="browser-style listButton" type="button">Add</button>
+            </div>
+          </div>
+
+          <button type="submit" class="browser-style">Save</button>
+      </form>
+    </div>
+    <script src="libs/browser-polyfill/browser-polyfill.min.js"></script>
+    <script src="dist/options.compiled.js"></script>
+  </body>
+</html>
